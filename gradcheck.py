@@ -3,7 +3,7 @@ import random
 
 # First implement a gradient checker by filling in the following functions
 
-## Numerical Gradient is J(X + h) - J(X - h) / 2*h
+## 
 def gradcheck_naive(f, x):
     """ 
     Gradient check for a function f 
@@ -21,17 +21,21 @@ def gradcheck_naive(f, x):
     while not it.finished:
         ix = it.multi_index
         
+        x_temp = x[ix]
+        
+        x[ix] = x_temp + h 
         random.setstate(rndstate)
-        f_xp,grad_p = f(x[ix] + h)
-        random.setstate(rndstate)
+        f_xp,grad_p = f(x)
+        
+        x[ix] = x_temp - h
         
         random.setstate(rndstate)
-        f_xn, grad_n = f(x[ix] - h)
+        f_xn, grad_n = f(x)
         numgrad = ( f_xp - f_xn ) / (2 * h)
         
         #print numgrad,grad[ix]
         reldiff = abs(numgrad - grad[ix]) / max(1, abs(numgrad), abs(grad[ix]))
-        if reldiff > 1e-5:
+        if reldiff > 1e-3:
             print "Gradient check failed."
             print "First gradient error found at index %s" % str(ix)
             print "Your gradient: %f \t Numerical gradient: %f" % (grad[ix], numgrad)
