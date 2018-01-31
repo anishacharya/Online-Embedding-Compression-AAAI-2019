@@ -5,7 +5,7 @@ import numpy as np
 datasets_dir = os.getcwd() + '/' + '../data/'
 
 
-netType = "svdseq2seq" # Options: seq2seq , svdseq2seq ,  + To Add Attention Options
+netType = "svdMLP" #"svdseq2seq" # Options: seq2seq , svdseq2seq ,  + To Add Attention Options
 n_in = 28*28            # i/p dim 
 n_out = 10              # o/p dim
 n_h = 128		# hidden dim
