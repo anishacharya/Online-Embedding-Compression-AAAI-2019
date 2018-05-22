@@ -1,0 +1,48 @@
+# directory containing collected corpora
+dir: data
+
+# directory containing postprocess script, each file should implement a 'doit' function
+# that takes a pandas dataframe as input and output a pandas datafram, please see postprocess/lj40kreduce.py for a reference
+postprocess_dir: postprocess
+
+
+# Each of the following corpus are collected in several files (train/dev/test)
+# For each file, a line starts with the emotion label, and then comes the sentence
+# e.x.
+# negative He is very sad.
+
+MR:
+    train: panglee/rt-polarity.all
+
+SST1:
+    train: stsa.fine.phrases.train
+    dev: stsa.fine.dev
+    test: stsa.fine.test
+
+SST2:
+    train: stsa.binary.phrases.train
+    dev: stsa.binary.dev
+    test: stsa.binary.test
+
+TREC:
+    train: TREC.train.all
+    test: TREC.test.all
+
+SUBJ:
+    train: subj.all
+
+MPQA:
+    train: mpqa.all
+
+YAHOO:
+    train: yahoo_blog.all
+
+# Each of the following corpus are collected in several directories
+# All documents(sentences) of the same emotion is collected in the same directory
+
+MR2:
+    dir: panglee/txt_sentoken
+
+LJ40K:
+    dir: /corpus/sentiment_dataset_non_public/LiveJournal/LJ40k/rawdata
+    postprocess: lj40kreduce

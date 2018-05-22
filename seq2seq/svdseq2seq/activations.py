@@ -1,22 +1,26 @@
 import numpy as np
-import theano as theano
-import theano.tensor as T
+import tensorflow as tf
+
+def relu(z):
+    if z < 0:
+        return 0
+    else:
+        return z
 
 def leaky_relu(z , alpha = 0):
-    if alpha == 1:
-    	return z
+    if z < 0:
+        return alpha * z
     else:
-    	return T.switch(z < 0, alpha * z, z)
+	return z
 
 def sigmoid(z):
-    return T.nnet.nnet.sigmoid(z)
+    return tf.sigmoid(z)
 
 def linear(z):
     return z
 
 def hyperbolic_tangent(z):
-    return T.tanh(z)
+    return tf.tanh(z)
 
 def softmax(z):
-    return T.nnet.softmax(z)[0]
-
+    return tf.softmax(z)[0]
