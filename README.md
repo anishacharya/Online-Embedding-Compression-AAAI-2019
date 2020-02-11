@@ -16,6 +16,6 @@ If you use code from this repository -
   pages={6196--6203},
   year={2019}
 }
-
+</pre>
 ***Read More :***
 [In The News](https://hub.packtpub.com/amazon-alexa-ai-researchers-develop-new-method-to-compress-neural-networks-and-preserves-accuracy-of-system/)
