@@ -8,13 +8,13 @@ Code used for Compression Work can be found here:
 
 If you use code from this repository - 
 ***Please Cite:***
-<pre>@inproceedings{acharya2019online,\
-  title={Online embedding compression for text classification using low rank matrix factorization},\
-  author={Acharya, Anish and Goel, Rahul and Metallinou, Angeliki and Dhillon, Inderjit},\
-  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},\
-  volume={33},\
-  pages={6196--6203},\
-  year={2019}\
+<pre>@inproceedings{acharya2019online,
+  title={Online embedding compression for text classification using low rank matrix factorization},
+  author={Acharya, Anish and Goel, Rahul and Metallinou, Angeliki and Dhillon, Inderjit},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={33},
+  pages={6196--6203},
+  year={2019}
 }
 
 
