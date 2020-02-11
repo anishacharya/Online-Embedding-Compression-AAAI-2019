@@ -1,12 +1,14 @@
-# Tensorflow_Wrapper 
-[Online Embedding Compression for Text Classification Using Low Rank Matrix Factorization](https://www.aaai.org/ojs/index.php/AAAI/article/view/4578)
+# Tensorflow_Wrapper:
+Several Code / Experiments writen in Tensorflow.
 
+Also contains the code for: 
+[Online Embedding Compression for Text Classification Using Low Rank Matrix Factorization](https://www.aaai.org/ojs/index.php/AAAI/article/view/4578)
 Code used for Compression Work can be found here:
 [Jump To Folder](https://github.com/anishacharya/Tensorflow_Wrapper/tree/master/compression_codebase)
 
-*Please Cite:*  
-**BibTex:**\
-@inproceedings{acharya2019online,\
+If you use code from this repository - 
+***Please Cite:***
+<pre>@inproceedings{acharya2019online,\
   title={Online embedding compression for text classification using low rank matrix factorization},\
   author={Acharya, Anish and Goel, Rahul and Metallinou, Angeliki and Dhillon, Inderjit},\
   booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},\
