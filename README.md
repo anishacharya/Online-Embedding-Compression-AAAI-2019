@@ -17,7 +17,5 @@ If you use code from this repository -
   year={2019}
 }
 
-
-
-
-
+***Read More :***
+[In The News](https://hub.packtpub.com/amazon-alexa-ai-researchers-develop-new-method-to-compress-neural-networks-and-preserves-accuracy-of-system/)
